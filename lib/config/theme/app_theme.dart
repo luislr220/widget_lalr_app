@@ -21,5 +21,11 @@ class AppTheme {
         'Selecciona un color menor a ${colorList.length}',
       );
 
-  ThemeData getTheme() => ThemeData(colorSchemeSeed: colorList[selectedColor]);
+  ThemeData getTheme() => ThemeData(
+    colorSchemeSeed: colorList[selectedColor],
+    appBarTheme: AppBarTheme(
+      centerTitle: true,
+      //elevation: 1,
+    ),
+  );
 }
