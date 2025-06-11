@@ -15,7 +15,6 @@ class HomeScreen extends StatelessWidget {
 }
 
 class _Homeview extends StatelessWidget {
-  const _Homeview({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -43,10 +42,6 @@ class _Customlisttitle extends StatelessWidget {
       subtitle: Text(menuItem.subTitle),
       trailing: Icon(Icons.arrow_forward_ios, color: color.primary),
       onTap: () {
-        //TODO: Navegar a la pantalla correspondiente
-        /* Navigator.of(context).push(
-          MaterialPageRoute(builder: (context))
-        ); */
         context.push(menuItem.link);
       },
     );

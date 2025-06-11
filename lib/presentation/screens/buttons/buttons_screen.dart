@@ -8,7 +8,7 @@ class ButtonsScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(title: const Text('Tipos de Botones')),
-      body: const _ButtonsView(),
+      body: _ButtonsView(),
       floatingActionButton: FloatingActionButton(
         child: const Icon(Icons.arrow_back),
         onPressed: () {
@@ -20,8 +20,6 @@ class ButtonsScreen extends StatelessWidget {
 }
 
 class _ButtonsView extends StatelessWidget {
-  const _ButtonsView({super.key});
-
   @override
   Widget build(BuildContext context) {
     return SizedBox(

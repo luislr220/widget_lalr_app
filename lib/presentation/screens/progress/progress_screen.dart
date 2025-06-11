@@ -5,6 +5,22 @@ class ProgressScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Placeholder();
+    return Scaffold(
+      appBar: AppBar(title: const Text('Progreso')),
+      body: _ProgressView(),
+      floatingActionButton: FloatingActionButton(
+        child: const Icon(Icons.arrow_back),
+        onPressed: () {
+          Navigator.of(context).pop();
+        },
+      ),
+    );
+  }
+}
+
+class _ProgressView extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Center();
   }
 }
