@@ -1,3 +1,7 @@
+export 'package:widget_lalr_app/presentation/theme_chage/theme_change_screen.dart';
+
+export 'package:widget_lalr_app/presentation/screens/counter/counter_screen.dart';
+
 export 'package:widget_lalr_app/presentation/screens/ui_controls/ui_controls_screen.dart';
 
 export 'package:widget_lalr_app/presentation/screens/snackbar/snackbar_screen.dart';
